@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/service.css">
+    <title>Service</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg></a></li>
+                <li><a href="main.html"><img src="/image/elite-mri.webp" alt="logo" /></a></li>
+                <li><a href="book.html" data-i18n="home.header.menu.services">Services</a></li>
+                <li><a href="/about" data-i18n="home.header.menu.about">About</a></li>
+                <li><a href="/FAQ" data-i18n="home.header.menu.faq">FAQ</a></li>
+                <li><a href="contact.html" data-i18n="home.header.menu.contact">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="/"><img src="/image/elite-mri.webp" alt="logo" /></a></li>
+                <li class="hideOnMobile"><a href="book.html" data-i18n="home.header.menu.services">Services</a></li>
+                <li class="hideOnMobile"><a href="/about" data-i18n="home.header.menu.about">About</a></li>
+                <li class="hideOnMobile"><a href="/FAQ" data-i18n="home.header.menu.faq">FAQ</a></li>
+                <li class="hideOnMobile"><a href="contact.html" data-i18n="home.header.menu.contact">Contact</a></li>
+                <li>
+
+                    <div class="switch">
+                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                        <label for="language-toggle"></label>
+                        <span class="on">EN</span>
+                        <span class="off">AR</span>
+                    </div>
+
+                </li>
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p class="section-label" data-i18n="service.section-label">Our Expertise</p>
+        <div class="how-it-works-header">
+            <h2 data-i18n="service.how-it-works-header.h2">Comprehansive Imaging Service</h2>
+            <p class="section-subtitle" data-i18n="service.how-it-works-header.p">
+                State-of-the-art diagnostic imaging with modem equipment and expert radiologists dedicated to your
+                health.
+            </p>
+        </div>
+
+
+        <div class="grid">
+            <div class="card">
+                <span class="icon">
+                    <img src="/image/mri.webp" alt="MRI-icon" />
+                </span>
+                <h4 data-i18n="service.card[0].h4">3T MRI</h4>
+                <p data-i18n="service.card[0].p">
+                    High-field 3T MRI for brain, spine, joints, and soft-tissue imaging with superior clarity.
+                </p>
+                <ul>
+                    <li data-i18n="service.card[0].li[0]">Brain & Spine</li>
+                    <li data-i18n="service.card[0].li[1]">Joint Imaging</li>
+                    <li data-i18n="service.card[0].li[2]">Soft Tissue</li>
+                    <li data-i18n="service.card[0].li[3]">No Radiation</li>
+                </ul>
+                <div class="shine"></div>
+                <div class="background">
+                    <div class="tiles">
+                        <div class="tile tile-1"></div>
+                        <div class="tile tile-2"></div>
+                        <div class="tile tile-3"></div>
+                        <div class="tile tile-4"></div>
+
+                        <div class="tile tile-5"></div>
+                        <div class="tile tile-6"></div>
+                        <div class="tile tile-7"></div>
+                        <div class="tile tile-8"></div>
+
+                        <div class="tile tile-9"></div>
+                        <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <div class="card">
+                <span class="icon">
+                    <img src="/image/brain.webp" alt="Brain-icon" />
+                </span>
+                <h4 data-i18n="service.card[1].h4">CT Scans</h4>
+                <p data-i18n="service.card[1].p">
+                    Low-dose CT scans with fast tumaround and sharp detail for comprehensive diagnoisi
+                </p>
+                <ul>
+                    <li data-i18n="service.card[1].li[0]">Fast Results</li>
+                    <li data-i18n="service.card[1].li[1]">3D Imaging</li>
+                    <li data-i18n="service.card[1].li[2]">Contrast Studies</li>
+                    <li data-i18n="service.card[1].li[3]">Low Radiation</li>
+                </ul>
+                <div class="shine"></div>
+                <div class="background">
+                    <div class="tiles">
+                        <div class="tile tile-1"></div>
+                        <div class="tile tile-2"></div>
+                        <div class="tile tile-3"></div>
+                        <div class="tile tile-4"></div>
+
+                        <div class="tile tile-5"></div>
+                        <div class="tile tile-6"></div>
+                        <div class="tile tile-7"></div>
+                        <div class="tile tile-8"></div>
+
+                        <div class="tile tile-9"></div>
+                        <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="icon">
+                    <img src="image/stethoscope.webp" alt="Stethoscope-icon" />
+                </span>
+                <h4 data-i18n="service.card[2].h4">Ultrasound</h4>
+                <p data-i18n="service.card[2].p">
+                    Non-invasive ultrasound for abdomen, vascuiar, OB/GYN, and cardiac imaging.
+                </p>
+                <ul>
+                    <li data-i18n="service.card[2].li[0]">Pregnancy</li>
+                    <li data-i18n="service.card[2].li[1]">Cardiac</li>
+                    <li data-i18n="service.card[2].li[2]">Abdominal</li>
+                    <li data-i18n="service.card[2].li[3]">Vascular</li>
+                </ul>
+                <div class="shine"></div>
+                <div class="background">
+                    <div class="tiles">
+                        <div class="tile tile-1"></div>
+                        <div class="tile tile-2"></div>
+                        <div class="tile tile-3"></div>
+                        <div class="tile tile-4"></div>
+
+                        <div class="tile tile-5"></div>
+                        <div class="tile tile-6"></div>
+                        <div class="tile tile-7"></div>
+                        <div class="tile tile-8"></div>
+
+                        <div class="tile tile-9"></div>
+                        <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="icon">
+                    <img src="/image/x-ray.webp" alt="x-ray-icon" />
+                </span>
+                <h4 data-i18n="service.card[3].h4">Digital X-ray</h4>
+                <p data-i18n="service.card[3].p"> 
+                    Digital radiography with minimal radiation exposure and instant results.
+                </p>
+                <ul>
+                    <li data-i18n="service.card[3].li[0]">Instant Results</li>
+                    <li data-i18n="service.card[3].li[1]">Low Dose</li>
+                    <li data-i18n="service.card[3].li[2]">Chest X-rays</li>
+                    <li data-i18n="service.card[3].li[3]">Bone Imaging</li>
+                </ul>
+                <div class="shine"></div>
+                <div class="background">
+                    <div class="tiles">
+                        <div class="tile tile-1"></div>
+                        <div class="tile tile-2"></div>
+                        <div class="tile tile-3"></div>
+                        <div class="tile tile-4"></div>
+
+                        <div class="tile tile-5"></div>
+                        <div class="tile tile-6"></div>
+                        <div class="tile tile-7"></div>
+                        <div class="tile tile-8"></div>
+
+                        <div class="tile tile-9"></div>
+                        <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+                </span>
+                <h4 data-i18n="service.card[4].h4">Cardiac Imaging</h4>
+                <p data-i18n="service.card[4].p">
+                    Specialized cardiac MRI and CT for comprehensive heart health assessment.
+                </p>
+                <ul>
+                    <li data-i18n="service.card[4].li[0]">Heart Function</li>
+                    <li data-i18n="service.card[4].li[1]">Vessel Imaging</li>
+                    <li data-i18n="service.card[4].li[2]">Risk Assessment</li>
+                    <li data-i18n="service.card[4].li[3]">Stress Testing</li>
+                </ul>
+                <div class="shine"></div>
+                <div class="background">
+                    <div class="tiles">
+                        <div class="tile tile-1"></div>
+                        <div class="tile tile-2"></div>
+                        <div class="tile tile-3"></div>
+                        <div class="tile tile-4"></div>
+
+                        <div class="tile tile-5"></div>
+                        <div class="tile tile-6"></div>
+                        <div class="tile tile-7"></div>
+                        <div class="tile tile-8"></div>
+
+                        <div class="tile tile-9"></div>
+                        <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                        <path
+                            d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41z" />
+                    </svg>
+                </span>
+                <h4 data-i18n="service.card[5].h4">Interventional</h4>
+                <p data-i18n="service.card[5].p">
+                    Minimally invasive procedures guided by advanced imaging technology.
+                </p>
+                <ul>
+                    <li data-i18n="service.card[5].li[0]">Image Guided</li>
+                    <li data-i18n="service.card[5].li[1]">Minimally Invasive</li>
+                    <li data-i18n="service.card[5].li[2]">Expert Care</li>
+                    <li data-i18n="service.card[5].li[3]">Same Day</li>
+                </ul>
+                <div class="shine"></div>
+                <div class="background">
+                    <div class="tiles">
+                        <div class="tile tile-1"></div>
+                        <div class="tile tile-2"></div>
+                        <div class="tile tile-3"></div>
+                        <div class="tile tile-4"></div>
+
+                        <div class="tile tile-5"></div>
+                        <div class="tile tile-6"></div>
+                        <div class="tile tile-7"></div>
+                        <div class="tile tile-8"></div>
+
+                        <div class="tile tile-9"></div>
+                        <div class="tile tile-10"></div>
+                    </div>
+
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/contact.js"></script>
+    <script src="/public/js/main.js"></script>
+</body>
+
+</html>

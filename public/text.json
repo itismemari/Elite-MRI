@@ -1,0 +1,502 @@
+{
+  "home": {
+    "header": {
+      "logoAlt": {
+        "en": "Elite MRI Logo",
+        "ar": "شعار إيليت إم آر آي"
+      },
+      "menu": {
+        "services": { "en": "Services", "ar": "الخدمات" },
+        "about": { "en": "About", "ar": "معلومات عنا" },
+        "faq": { "en": "FAQ", "ar": "الأسئلة الشائعة" },
+        "contact": { "en": "Contact", "ar": "اتصل بنا" }
+      }
+    },
+    "hero": {
+      "title": { "en": "Welcome to Elite MRI", "ar": "مرحبًا بكم في النخبة التصوير بالرنين المغناطيسي " },
+      "subtitle": {
+        "en": "Advanced, patient-first imaging with MRI, CT, and X-ray, and ultrasound...",
+        "ar": "تصوير متقدم يضع المريض أولاً باستخدام الرنين المغناطيسي، والأشعة المقطعية، والأشعة السينية، والموجات فوق الصوتية..."
+      },
+      "buttons": {
+        "book": { "en": "Book Appointment", "ar": "احجز موعد" },
+        "call": { "en": "Call Now", "ar": "اتصل الآن" }
+      },
+      "features": [
+        {
+          "en": "3T MRI & High-Resolution Imaging",
+          "ar": "تصوير بالرنين المغناطيسي 3T عالي الدقة"
+        },
+        {
+          "en": "Low-dose CT & Digital X-ray",
+          "ar": "أشعة مقطعية بجرعة منخفضة وأشعة سينية رقمية"
+        },
+        {
+          "en": "Same-Day Scheduling",
+          "ar": "مواعيد في نفس اليوم"
+        },
+        {
+          "en": "Results in 24-48 hours",
+          "ar": "النتائج خلال 24-48 ساعة"
+        }
+      ]
+    },
+    "servicesIntro": {
+      "title": { "en": "Comprehensive diagnostic imaging with modern equipment and expert radiologists.", "ar": "تشخيص شامل باستخدام أجهزة حديثة وأطباء أشعة خبراء." }
+    },
+    "services": {
+      "mri": {
+        "title": { "en": "MRI", "ar": "الرنين المغناطيسي" },
+        "desc": {
+          "en": "High-field 3T MRI for brain, spine, joints, and soft-tissue imaging.",
+          "ar": "تصوير بالرنين المغناطيسي 3T عالي القوة للدماغ والعمود الفقري والمفاصل والأنسجة الرخوة."
+        }
+      },
+      "ct": {
+        "title": { "en": "CT", "ar": "الأشعة المقطعية" },
+        "desc": {
+          "en": "Low-dose CT scans with fast turnaround and sharp detail.",
+          "ar": "تصوير مقطعي بجرعة منخفضة مع سرعة في النتائج ودقة عالية."
+        }
+      },
+      "ultrasound": {
+        "title": { "en": "Ultrasound", "ar": "الموجات فوق الصوتية" },
+        "desc": {
+          "en": "Non-invasive ultrasound for abdomen, vascular, and OB/GYN.",
+          "ar": "موجات فوق صوتية غير جراحية للبطن والأوعية الدموية وأمراض النساء والولادة."
+        }
+      },
+      "xray": {
+        "title": { "en": "X-ray", "ar": "الأشعة السينية" },
+        "desc": {
+          "en": "Digital radiography with minimal radiation exposure.",
+          "ar": "تصوير إشعاعي رقمي مع تقليل التعرض للإشعاع."
+        }
+      }
+    }
+  },
+  "booking" : {
+    "howItWorks": {
+      "sectionLabel": { "en": "Simple Process", "ar": "عملية بسيطة" },
+      "header": {
+        "title": { "en": "How It Works", "ar": "كيف تعمل الخدمة" },
+        "subtitle": {
+          "en": "From booking to results, we've streamlined every step to make your experience as smooth as possible.",
+          "ar": "من الحجز حتى النتائج، قمنا بتبسيط كل خطوة لجعل تجربتك سلسة قدر الإمكان."
+        }
+      },
+      "steps": [
+        {
+          "title": { "en": "Schedule Appointment", "ar": "جدولة الموعد" },
+          "description": {
+            "en": "Book online or call us. Same-day and next-day slots available.",
+            "ar": "احجز عبر الإنترنت أو اتصل بنا. مواعيد اليوم نفسه واليوم التالي متاحة."
+          },
+          "time": { "en": "5 minutes", "ar": "5 دقائق" }
+        },
+        {
+          "title": { "en": "Prepare & Arrive", "ar": "التحضير والوصول" },
+          "description": {
+            "en": "Follow simple prep instructions. Arrive 15 minutes early for check-in.",
+            "ar": "اتبع تعليمات التحضير البسيطة. وصل قبل 15 دقيقة من موعدك للتسجيل."
+          },
+          "time": { "en": "15 minutes", "ar": "15 دقيقة" }
+        },
+        {
+          "title": { "en": "Quick Scan", "ar": "الفحص السريع" },
+          "description": {
+            "en": "Comfortable, professional imaging with our expert technologists.",
+            "ar": "تصوير مريح واحترافي مع تقنينا الخبراء."
+          },
+          "time": { "en": "15–45 minutes", "ar": "15–45 دقيقة" }
+        },
+        {
+          "title": { "en": "Get Results", "ar": "استلام النتائج" },
+          "description": {
+            "en": "Detailed report sent to your doctor within 24–48 hours.",
+            "ar": "يتم إرسال تقرير مفصل إلى طبيبك خلال 24–48 ساعة."
+          },
+          "time": { "en": "24–48 hours", "ar": "24–48 ساعة" }
+        }
+      ]
+    }
+  },"callback":{
+  "backButton": {
+    "en": "Back",
+    "ar": "رجوع"
+  },
+  "pageTitle": {
+    "en": "Contact - Elite MRI",
+    "ar": "اتصل بنا - إيليت إم آر آي"
+  },
+  "contactSection": {
+    "aboutTitle": {
+      "en": "About Elite MRI",
+      "ar": "عن إيليت إم آر آي"
+    },
+    "headline": {
+      "en": "Precision Imaging, Compassionate Care",
+      "ar": "تصوير دقيق، رعاية رحيمة"
+    },
+    "intro": {
+      "en": [
+        "At Elite MRI, we combine cutting-edge imaging technology with compassionate, patient-centered care. Our board-certified radiologists and experienced technologists ensure precise diagnostics and a smooth experience from check-in to results.",
+        "Located in the heart of Amman, we serve patients throughout Jordan with the most advanced diagnostic imaging services. Our commitment to excellence, combined with our patient-first approach, makes us the trusted choice for physicians and patients alike."
+      ],
+      "ar": [
+        "في إيليت إم آر آي، نجمع بين أحدث تقنيات التصوير الطبي والرعاية الرحيمة التي تركز على المريض. يضمن أطباء الأشعة المعتمدون دوليًا والتقنيون ذوو الخبرة تشخيصًا دقيقًا وتجربة سلسة من تسجيل الوصول إلى النتائج.",
+        "مقرنا في قلب عمان، ونخدم المرضى في جميع أنحاء الأردن بأحدث خدمات التصوير التشخيصي. يجمع التزامنا بالتميز مع نهجنا الذي يضع المريض أولاً، مما يجعلنا الخيار الموثوق للأطباء والمرضى على حد سواء."
+      ]
+    },
+    "info": {
+      "en": [
+        "Board-certified radiologists with international training",
+        "Same-day & next-day appointments available",
+        "Clear, detailed reports within 24-48 hours",
+        "Multilingual staff (Arabic, English)",
+        "State-of-the-art 3T MRI technology",
+        "Comfortable, anxiety-reducing environment",
+        "Comprehensive insurance coverage",
+        "Convenient Amman location with parking"
+      ],
+      "ar": [
+        "أطباء أشعة معتمدون دوليًا وذو تدريب عالمي",
+        "مواعيد في نفس اليوم واليوم التالي متاحة",
+        "تقارير واضحة ومفصلة خلال 24-48 ساعة",
+        "فريق متعدد اللغات (عربي، إنجليزي)",
+        "تقنية تصوير بالرنين المغناطيسي 3T متطورة",
+        "بيئة مريحة تقلل من القلق",
+        "تغطية شاملة للتأمين",
+        "موقع مناسب في عمان مع مواقف سيارات"
+      ]
+    },
+    "buttons": {
+      "scheduleConsultation": {
+        "en": "Schedule Consultation",
+        "ar": "جدولة استشارة"
+      },
+      "insurancePricing": {
+        "en": "Insurance & Pricing",
+        "ar": "التأمين والأسعار"
+      }
+    }
+  },
+  "contactForm": {
+    "title": {
+      "en": "Contact Us",
+      "ar": "اتصل بنا"
+    },
+    "subtitle": {
+      "en": "Get personalized information about our services and schedule your appointment.",
+      "ar": "احصل على معلومات مخصصة حول خدماتنا وحدد موعدك."
+    },
+    "fields": {
+      "fullName": {
+        "en": "Full Name",
+        "ar": "الاسم الكامل"
+      },
+      "phoneNumber": {
+        "en": "Phone Number",
+        "ar": "رقم الهاتف"
+      },
+      "preferredService": {
+        "en": "Preferred Service",
+        "ar": "الخدمة المفضلة"
+      },
+      "message": {
+        "en": "Message (optional)",
+        "ar": "(اختياري) الرسالة"
+      },
+      "submit": {
+        "en": "Request Callback",
+        "ar": "طلب رد الاتصال"
+      },
+      "sub":{
+        "en": "We'll contact you within 2 hours during business hours.",
+        "ar": "سوف نتصل بك خلال ساعتين خلال ساعات العمل."
+      }
+    }
+  }
+},
+  "contact": {
+    "contact_section": {
+        "visit":{
+            "en":"Visit us",
+            "er":"قم بزيارتنا"
+        },
+      "title": {
+        "en": "Contact & Location",
+        "ar": "تواصل وموقعنا"
+      },
+      "description": {
+        "en": "Located in the prestigious Medical Palace Center in Amman. We welcome both scheduled appointments and walk-ins for your convenience.",
+        "ar": "يقع في مركز بالاس الطبي المرموق في عمان. نرحب بالمواعيد المحددة والمراجعين بدون موعد لتسهيل خدمتكم."
+      },
+      "center_name": {
+        "en": "Elite MRI & Diagnostic Radiology Center",
+        "ar": "مركز إيليت للتصوير بالرنين المغناطيسي والأشعة التشخيصية"
+      },
+      "address": {
+        "building": {
+          "en": "Medical Palace Center",
+          "ar": "مركز بالاس الطبي"
+        },
+        "street": {
+          "en": "Al-Juhair St, 14, Telaa Al-Ali",
+          "ar": "شارع الجُهير 14، طلعة العلي"
+        },
+        "plus_code": "XWWF+JFP, Amman, Jordan 11941"
+      },
+      "details": {
+          "phone" : {
+            "label": {
+              "en": "Phone",
+              "ar": "الهاتف"
+            },
+            "value": "+962 ... ****"
+          },
+          "email" : {
+            "label": {
+              "en": "Email",
+              "ar": "البريد الإلكتروني"
+            },
+            "value": "info@elitemri.jo"
+          },
+          "days" : {
+            "label": {
+              "en": "Days",
+              "ar": "أيام العمل"
+            },
+            "value": {
+              "en": "Monday – Saturday",
+              "ar": "الإثنين – السبت"
+            }
+          },
+          "hours" : {
+            "label": {
+              "en": "Hours",
+              "ar": "ساعات العمل"
+            },
+            "value": {
+              "en": "8:00 AM – 8:00 PM",
+              "ar": "8:00 صباحاً – 8:00 مساءً"
+            }
+          }
+      },
+      "buttons": [
+        {
+          "type": "directions",
+          "label": {
+            "en": "Get Directions",
+            "ar": "الحصول على الاتجاهات"
+          }
+        },
+        {
+          "type": "call",
+          "label": {
+            "en": "Call Now",
+            "ar": "اتصل الآن"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "sections": [
+        {
+          "title": {
+            "en": "Elite MRI",
+            "ar": "إيليت للتصوير بالرنين المغناطيسي"
+          },
+          "content": {
+            "en": "Advanced diagnostic imaging with compassionate, patient-centered care in the heart of Amman.",
+            "ar": "تصوير تشخيصي متقدم مع رعاية متعاطفة وتركز على المريض في قلب عمان."
+          }
+        },
+        {
+          "title": {
+            "en": "Services",
+            "ar": "الخدمات"
+          },
+          "links": [
+            {
+              "en": "3T MRI Imaging",
+              "ar": "تصوير بالرنين المغناطيسي 3T"
+            },
+            {
+              "en": "CT Scans",
+              "ar": "الأشعة المقطعية"
+            },
+            {
+              "en": "Ultrasound",
+              "ar": "الأشعة فوق الصوتية"
+            },
+            {
+              "en": "Digital X-ray",
+              "ar": "الأشعة السينية الرقمية"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Quick Links",
+            "ar": "روابط سريعة"
+          },
+          "links": [
+            {
+              "en": "About Us",
+              "ar": "من نحن"
+            },
+            {
+              "en": "Our Team",
+              "ar": "فريقنا"
+            },
+            {
+              "en": "FAQ",
+              "ar": "الأسئلة الشائعة"
+            },
+            {
+              "en": "Contact",
+              "ar": "تواصل معنا"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Contact Info",
+            "ar": "معلومات الاتصال"
+          },
+          "address": [
+            {
+              "en": "Medical Palace Center",
+              "ar": "مركز بالاس الطبي"
+            },
+            {
+              "en": "Al-Juhair St, Telaa Al-Ali",
+              "ar": "شارع الجُهير، طلعة العلي"
+            },
+            {
+              "en": "Amman, Jordan",
+              "ar": "عمان، الأردن"
+            }
+          ],
+          "phone": "+962 ... ****"
+        }
+      ]
+    }
+  },
+  "service":{
+    "section-label": {
+        "en":"Our Expertise",
+        "ar":"خبرتنا"
+    },
+    "how-it-works-header": {
+        "h2" : {
+            "en" : "Comprehansive Imaging Service",
+            "ar" : "خدمة التصوير الشاملة"
+        },
+        "p" : {
+            "en":"State-of-the-art diagnostic imaging with modem equipment and expert radiologists dedicated to your health.",
+            "ar" : "تصوير تشخيصي متطور بمعدات حديثة وأطباء أشعة متخصصين في صحتك."
+        }
+    },
+  "card": [
+    {
+      "h4": {
+        "en": "3T MRI",
+        "ar": "التصوير بالرنين المغناطيسي 3T"
+      },
+      "p": {
+        "en": "High-field 3T MRI for brain, spine, joints, and soft-tissue imaging with superior clarity.",
+        "ar": "التصوير بالرنين المغناطيسي عالي المجال 3T لتصوير الدماغ والعمود الفقري والمفاصل والأنسجة الرخوة بوضوح فائق."
+      },
+      "li": [
+        { "en": "Brain & Spine", "ar": "الدماغ والعمود الفقري" },
+        { "en": "Joint Imaging", "ar": "تصوير المفاصل" },
+        { "en": "Soft Tissue", "ar": "الأنسجة الرخوة" },
+        { "en": "No Radiation", "ar": "بدون إشعاع" }
+      ]
+    },
+    {
+      "h4": {
+        "en": "CT Scans",
+        "ar": "الأشعة المقطعية"
+      },
+      "p": {
+        "en": "Low-dose CT scans with fast turnaround and sharp detail for comprehensive diagnosis.",
+        "ar": "أشعة مقطعية منخفضة الجرعة مع سرعة في الإنجاز وتفاصيل واضحة لتشخيص شامل."
+      },
+      "li": [
+        { "en": "Fast Results", "ar": "نتائج سريعة" },
+        { "en": "3D Imaging", "ar": "تصوير ثلاثي الأبعاد" },
+        { "en": "Contrast Studies", "ar": "فحوصات بالصبغة" },
+        { "en": "Low Radiation", "ar": "جرعة إشعاع منخفضة" }
+      ]
+    },
+    {
+      "h4": {
+        "en": "Ultrasound",
+        "ar": "الأشعة فوق الصوتية"
+      },
+      "p": {
+        "en": "Non-invasive ultrasound for abdomen, vascular, OB/GYN, and cardiac imaging.",
+        "ar": "تصوير بالموجات فوق الصوتية غير جراحي للبطن والأوعية الدموية والنساء والولادة والقلب."
+      },
+      "li": [
+        { "en": "Pregnancy", "ar": "الحمل" },
+        { "en": "Cardiac", "ar": "القلب" },
+        { "en": "Abdominal", "ar": "البطن" },
+        { "en": "Vascular", "ar": "الأوعية الدموية" }
+      ]
+    },
+    {
+      "h4": {
+        "en": "Digital X-ray",
+        "ar": "الأشعة السينية الرقمية"
+      },
+      "p": {
+        "en": "Digital radiography with minimal radiation exposure and instant results.",
+        "ar": "تصوير إشعاعي رقمي بجرعة إشعاع منخفضة ونتائج فورية."
+      },
+      "li": [
+        { "en": "Instant Results", "ar": "نتائج فورية" },
+        { "en": "Low Dose", "ar": "جرعة منخفضة" },
+        { "en": "Chest X-rays", "ar": "أشعة صدرية" },
+        { "en": "Bone Imaging", "ar": "تصوير العظام" }
+      ]
+    },
+    {
+      "h4": {
+        "en": "Cardiac Imaging",
+        "ar": "تصوير القلب"
+      },
+      "p": {
+        "en": "Specialized cardiac MRI and CT for comprehensive heart health assessment.",
+        "ar": "تصوير متخصص للقلب بالرنين المغناطيسي والأشعة المقطعية لتقييم شامل لصحة القلب."
+      },
+      "li": [
+        { "en": "Heart Function", "ar": "وظائف القلب" },
+        { "en": "Vessel Imaging", "ar": "تصوير الأوعية" },
+        { "en": "Risk Assessment", "ar": "تقييم المخاطر" },
+        { "en": "Stress Testing", "ar": "اختبار الجهد" }
+      ]
+    },
+    {
+      "h4": {
+        "en": "Interventional",
+        "ar": "التداخلات الطبية"
+      },
+      "p": {
+        "en": "Minimally invasive procedures guided by advanced imaging technology.",
+        "ar": "إجراءات طفيفة التوغل موجهة بتقنيات تصوير متقدمة."
+      },
+      "li": [
+        { "en": "Image Guided", "ar": "موجه بالتصوير" },
+        { "en": "Minimally Invasive", "ar": "طفيف التوغل" },
+        { "en": "Expert Care", "ar": "رعاية متخصصة" },
+        { "en": "Same Day", "ar": "في نفس اليوم" }
+      ]
+    }
+  ]
+}
+
+}

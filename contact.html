@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/contact.css">
+    <title>Contact & Location</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg></a></li>
+                <li><a href="main.html"><img src="/image/elite-mri.webp" alt="logo" /></a></li>
+                <li><a href="book.html" data-i18n="home.header.menu.services">Services</a></li>
+                <li><a href="/about" data-i18n="home.header.menu.about">About</a></li>
+                <li><a href="/FAQ" data-i18n="home.header.menu.faq">FAQ</a></li>
+                <li><a href="contact.html" data-i18n="home.header.menu.contact">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="/"><img src="/image/elite-mri.webp" alt="logo" /></a></li>
+                <li class="hideOnMobile"><a href="book.html" data-i18n="home.header.menu.services">Services</a></li>
+                <li class="hideOnMobile"><a href="/about" data-i18n="home.header.menu.about">About</a></li>
+                <li class="hideOnMobile"><a href="/FAQ" data-i18n="home.header.menu.faq">FAQ</a></li>
+                <li class="hideOnMobile"><a href="contact.html" data-i18n="home.header.menu.contact">Contact</a></li>
+                <li>
+
+                    <div class="switch">
+                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                        <label for="language-toggle"></label>
+                        <span class="on">EN</span>
+                        <span class="off">AR</span>
+                    </div>
+
+                </li>
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gradient-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+        <div class="particles-container" id="particles-container"></div>
+    </div>
+
+    <div class="container">
+        <div class="contact-section">
+            <div class="contact-info">
+                <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg><span data-i18n="contact.contact_section.visit">Visit us</span></h6>
+                <h2 id="contact" data-i18n="contact.contact_section.title">Contact & Location</h2>
+                <p data-i18n="contact.contact_section.description">Located in the prestigious Medical Palace Center in
+                    Amman. We welcome both scheduled appointments and
+                    walk-ins for your convenience.</p>
+                <h3 data-i18n="contact.contact_section.center_name">Elite MRI & Diagnostic Radiology Center</h3>
+                <p data-i18n="contact.contact_section.address.building">Medical Palace Center<br
+                        data-i18n="contact.contact_section.address.street">Al-Juhair St, 14, Telaa Al-Ali<br
+                        data-i18n="contact.contact_section.address.plus_code">XWWF+JFP, Amman, Jordan 11941</p>
+                <div class="details">
+                    <div class="left">
+                        <div class="cell">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-phone" viewBox="0 0 16 16">
+                                <path
+                                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                            </svg>
+                            <div class="info">
+                                <label data-i18n="contact.contact_section.details.phone.label">Phone</label>
+                                <p>+962 ... ****</p>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <i class="email"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                    fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                </svg></i>
+                            <div class="info">
+                                <label data-i18n="contact.contact_section.details.email.label">Email</label>
+                                <p>info@elitemri.jo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="cell">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-calendar" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                            </svg>
+                            <div class="info">
+                                <label data-i18n="contact.contact_section.details.days.label">Days</label>
+                                <p data-i18n="contact.contact_section.details.days.value">Monday – Saturday</p>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                class="bi bi-clock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <div class="info">
+                                <label data-i18n="contact.contact_section.details.hours.label">Hours</label>
+                                <p data-i18n="contact.contact_section.details.hours.value">8:00 AM – 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="white-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path
+                            d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                    </svg> <span data-i18n="contact.contact_section.buttons[0].label">Get Directions</span></button>
+                <button class="black-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path
+                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                    </svg> <span data-i18n="contact.contact_section.buttons[1].label">Call Now</span></button>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.6816365573777!2d35.87113477628636!3d31.996644773999577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca02b7ab85eaf%3A0x4d73150600f164fa!2sThe%20Medical%20Palace!5e0!3m2!1sen!2sjo!4v1755526176422!5m2!1sen!2sjo"
+                width="600" height="450" style="border:0; filter: grayscale(80%) invert(90%) hue-rotate(180deg);"
+                id="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h3 data-i18n="contact.footer.sections[0].title">Elite MRI</h3>
+            <p data-i18n="contact.footer.sections[0].content">Advanced diagnostic imaging with compassionate,
+                patient-centered care in the heart of Amman.</p>
+        </div>
+        <div>
+            <h3 data-i18n="contact.footer.sections[1].title">Services</h3>
+            <a href="#" data-i18n="contact.footer.sections[1].links[0]">3T MRI Imaging</a>
+            <a href="#" data-i18n="contact.footer.sections[1].links[1]">CT Scans</a>
+            <a href="#" data-i18n="contact.footer.sections[1].links[2]">Ultrasound</a>
+            <a href="#" data-i18n="contact.footer.sections[1].links[3]">Digital X-ray</a>
+        </div>
+        <div>
+            <h3 data-i18n="contact.footer.sections[2].title">Quick Links</h3>
+            <a href="#" data-i18n="contact.footer.sections[2].links[0]">About Us</a>
+            <a href="#" data-i18n="contact.footer.sections[2].links[1]">Our Team</a>
+            <a href="#" data-i18n="contact.footer.sections[2].links[2]">FAQ</a>
+            <a href="#" data-i18n="contact..footer.sections[2].links[3]">Contact</a>
+        </div>
+        <div>
+            <h3 data-i18n="contact.footer.sections[3].title">Contact Info</h3>
+            <p data-i18n="contact.footer.sections[3].address[0]">Medical Palace Center</p>
+            <p data-i18n="contact.footer.sections[3].address[1]">Al-Juhair St, Telaa Al-Ali</p>
+            <p data-i18n="contact.footer.sections[3].address[2]">Amman, Jordan</p>
+            <p>+962 ... ****</p>
+        </div>
+    </footer>
+    <script src="/public/js/main.js"></script>
+</body>
+
+</html>

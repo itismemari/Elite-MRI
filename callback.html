@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/callback.css">
+    <title>Contact - Elite MRI</title>
+</head>
+
+<body>
+    <header>
+        <div class="back" onclick="history.back()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-caret-left-square"
+                viewBox="0 0 16 16">
+                <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                <path
+                    d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082" />
+            </svg>
+        </div>
+
+        <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+            <label for="language-toggle"></label>
+            <span class="on">EN</span>
+            <span class="off">AR</span>
+        </div>
+    </header>
+
+        <div class="gradient-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+        <div class="particles-container" id="particles-container"></div>
+    </div>
+
+    <div class="container">
+        <div class="contact-section">
+            <!-- Left side: Contact Info -->
+            <div class="contact-info">
+                <h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-briefcase" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5" />
+                    </svg> <span data-i18n="callback.contactSection.aboutTitle">About Elite MRI</span>
+                </h6>
+                <h1 data-i18n="callback.contactSection.headline">Precision Imaging, Compassionate Care</h1>
+                <div class="intro">
+                    <p data-i18n="callback.contactSection.intro.0">At Elite MRI, we combine cutting-edge imaging
+                        technology with
+                        compassionate, patient-centered
+                        care. Our board-certified radiologists and experienced technologists ensure precise diagnostics
+                        and a smooth experience from check-in to results.</p>
+                    <p data-i18n="callback.contactSection.intro.1">Located in the heart of Amman, we serve patients
+                        throughout Jordan
+                        with the most advanced
+                        diagnostic imaging services. Our commitment to excellence, combined with our patient-first
+                        approach, makes us the trusted choice for physicians and patients alike.</p>
+                </div>
+                <ul class="details">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg> <span data-i18n="callback.contactSection.info.0">Board-certified radiologists with
+                            international training</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg> <span data-i18n="callback.contactSection.info.1">Same-day & next-day appointments
+                            available</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg> <span data-i18n="callback.contactSection.info.2">Clear, detailed reports within 24-48
+                            hours</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg> <span data-i18n="callback.contactSection.info.3">Multilingual staff (Arabic,
+                            English)</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg> <span data-i18n="callback.contactSection.info.4">State-of-the-act 3T MRI
+                            technology</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg><span data-i18n="callback.contactSection.info.5">Comfortable, anxiety-reducing
+                            environment</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg> <span data-i18n="callback.contactSection.info.6">Comprehensive insurance
+                            coverage</span></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-check-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg> <span data-i18n="callback.contactSection.info.7">convenient Amman location with
+                            parking</span></li>
+                </ul>
+                <div class="buttons">
+                    <a class="btn-3d" href="#">
+                        <span data-i18n="callback.contactSection.buttons.scheduleConsultation">Schedule
+                            Consultation</span>
+                        <span data-i18n="callback.contactSection.buttons.scheduleConsultation">Schedule
+                            Consultation</span>
+                        <span data-i18n="callback.contactSection.buttons.scheduleConsultation">Schedule
+                            Consultation</span>
+                        <span data-i18n="callback.contactSection.buttons.scheduleConsultation">Schedule
+                            Consultation</span>
+                    </a>
+                    <button class="black-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-phone" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                        </svg>
+                        <span data-i18n="callback.contactSection.buttons.insurancePricing">insurance & Pricing</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right side: Contact Form -->
+            <div class="contact-form">
+                <h2 data-i18n="callback.contactForm.title">Contact Us</h2>
+                <p class="form-subtitle" data-i18n="callback.contactForm.subtitle">Get personalized information about
+                    our services and schedule your appointment.
+                </p>
+                <form>
+                    <!-- Two-column row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-i18n="callback.contactForm.fields.fullName">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel" data-i18n="callback.contactForm.fields.phoneNumber">Phone Number</label>
+                            <input type="tel" id="tel" name="tel" placeholder="+962 *** ****" required>
+                        </div>
+                    </div>
+
+                    <!-- Single column fields -->
+                    <div class="form-group">
+                        <label for="service" data-i18n="callback.contactForm.fields.preferredService">Preferred
+                            Service</label>
+                        <select id="basic-select" name="service">
+                            <option value="none" selected>Select a Service (optional)</option>
+                            <option value="X-ray">X-ray</option>
+                            <option value="MRI">MRI</option>
+                            <option value="CT Scan">CT Scan</option>
+                            <option value="Ultrasound">Ultrasound</option>
+                            <option value="Mammography">Mammography</option>
+                            <option value="Bone Density">Bone Density</option>
+                            <option value="Consultation">Consultation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-i18n="callback.contactForm.fields.message">Message (optional)</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6"></textarea>
+                    </div>
+
+                    <button type="submit" data-i18n="callback.contactForm.fields.submit">Request Callback</button>
+                    <p class="form-subtitle" data-i18n="callback.contactForm.fields.sub">We'll contact you within 2
+                        hours during
+                        business hours.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/main.js"></script>
+</body>
+
+</html>

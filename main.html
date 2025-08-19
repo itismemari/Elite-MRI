@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>Elite MRI</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                            fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                        </svg></a></li>
+                <li><a href="main.html"><img src="/image/elite-mri.webp" alt="logo" /></a></li>
+                <li><a href="book.html" data-i18n="home.header.menu.services">Services</a></li>
+                <li><a href="/about" data-i18n="home.header.menu.about">About</a></li>
+                <li><a href="/FAQ" data-i18n="home.header.menu.faq">FAQ</a></li>
+                <li><a href="contact.html" data-i18n="home.header.menu.contact">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="/"><img src="/image/elite-mri.webp" alt="logo" /></a></li>
+                <li class="hideOnMobile"><a href="book.html" data-i18n="home.header.menu.services">Services</a></li>
+                <li class="hideOnMobile"><a href="/about" data-i18n="home.header.menu.about">About</a></li>
+                <li class="hideOnMobile"><a href="/FAQ" data-i18n="home.header.menu.faq">FAQ</a></li>
+                <li class="hideOnMobile"><a href="contact.html" data-i18n="home.header.menu.contact">Contact</a></li>
+                <li>
+
+                    <div class="switch">
+                        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                        <label for="language-toggle"></label>
+                        <span class="on">EN</span>
+                        <span class="off">AR</span>
+                    </div>
+
+                </li>
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="gradient-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+        <div class="gradient-sphere sphere-3"></div>
+        <div class="glow"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+        <div class="particles-container" id="particles-container"></div>
+    </div>
+
+    <div class="container">
+        <div class="canvas-container"> 
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="canvas__overlay">
+            <h1 data-i18n="home.hero.title">Welcome to Elite MRI</h1>
+            <p data-i18n="home.hero.subtitle">Advanced, patient-first imaging with MRI, CT, and X-ray, and
+                ultrasound...
+            </p>
+            <div class="buttons">
+                <a href="./callback.html" class="btn" data-i18n="home.hero.buttons.book">Book Appointment</a>
+                <a href="./call.html" class="btn btn-secondary" data-i18n="home.hero.buttons.call">Call Now</a>
+            </div>
+            <ul>
+                <li data-i18n="home.hero.features[0]">3T MRI & High-Resolution Imaging</li>
+                <li data-i18n="home.hero.features[1]">Low-dose CT & Digital X-ray</li>
+                <li data-i18n="home.hero.features[2]">Same-Day Scheduling</li>
+                <li data-i18n="home.hero.features[3]">Results in 24-48 hours</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="image-services">
+        <h1 id="typing"></h1>
+        <p data-i18n="home.servicesIntro.title">Comprehensive diagnostic imaging with modem equipment and expert
+            radiologists.</p>
+    </div>
+
+    <div class="image-services-container">
+        <div class="card">
+            <div class="card-header">
+                <div class="icon"><img src="/image/mri.webp" alt="MRI-icon" data-i18n="home.services.mri.title" />
+                </div>
+                <div class="title" data-i18n="home.services.mri.title">
+                    MRI
+                </div>
+            </div>
+            <div class="card-content">
+                <p data-i18n="home.services.mri.desc">
+                    High-field 3T MRI for brain, spine, joints, and soft-tissue imaging.
+                </p>
+            </div>
+            <div class="card-bar"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon"><img src="/image/brain.webp" alt="Brain-icon" data-i18n="home.services.ct.title" />
+                </div>
+                <div class="title" data-i18n="home.services.ct.title">
+                    CT
+                </div>
+            </div>
+            <div class="card-content">
+                <p data-i18n="home.services.ct.desc">
+                    Low-dose CT scans with fast turnaround and sharp detail.
+                </p>
+            </div>
+            <div class="card-bar"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon"><img src="/image/stethoscope.webp" alt="Stethoscope-icon"
+                        data-i18n="home.services.ultrasound.title" /></div>
+                <div class="title" data-i18n="home.services.ultrasound.title">
+                    Ultrasound
+                </div>
+            </div>
+            <div class="card-content">
+                <p data-i18n="home.services.ultrasound.desc">
+                    Non-invasive ultrasound for abdomen, vascular, and OB/GYN.
+                </p>
+            </div>
+            <div class="card-bar"></div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon"><img src="/image/x-ray.webp" alt="x-ray-icon" data-i18n="home.services.xray.title" />
+                </div>
+                <div class="title" data-i18n="home.services.xray.title">
+                    X-ray
+                </div>
+            </div>
+            <div class="card-content">
+                <p data-i18n="home.services.xray.desc">
+                    Digital radiography with minimal radiation exposure.
+                </p>
+            </div>
+            <div class="card-bar"></div>
+        </div>
+    </div>
+
+    <script src="/public/js/main.js"></script>
+    <script type="module" src="/public/js/three.js"></script>
+</body>
+
+</html>
