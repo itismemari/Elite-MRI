@@ -282,23 +282,26 @@ input.check-toggle-round-flat:checked+label:after {
     justify-content: center;
     align-items: center;
     background: #F3F4F6;
+    border-radius: 18px;
     overflow: hidden;
     flex-direction: row-reverse;
     /* stack overlay on top naturally */
     gap: 40px;
     z-index: auto;
     margin: auto;
+    margin-top: 100vh;
 }
 
 .gradient-background {
-    position: fixed; /* stays in place during scroll */
+    position: fixed;
+    /* stays in place during scroll */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
     overflow: hidden;
 }
 
@@ -531,7 +534,6 @@ html[dir="rtl"] .canvas-container {
     align-items: center;
     transform: translateY(50px);
     opacity: 0;
-    animation: overlayIn 1s forwards 0.3s;
 }
 
 /* Overlay content on top of canvas */
@@ -548,7 +550,11 @@ html[dir="rtl"] .canvas-container {
     gap: 20px;
     opacity: 0;
     transform: translateY(50px);
-    animation: overlayIn 1s forwards 0.3s;
+}
+
+.canvas__overlay.show,
+.canvas-container.show {
+    animation: overlayIn 1.5s ease forwards;
 }
 
 html[dir="rtl"] .canvas__overlay {
@@ -880,5 +886,368 @@ html[dir="rtl"] .canvas__overlay {
     .image-services {
         margin-inline-start: 20px;
         /* reduce margin on smaller screens */
+    }
+}
+
+.opaque {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: #d2d6f1;
+}
+
+.lt-ie9 .opaque {
+    display: none;
+}
+
+.feature {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    padding-top: 50%;
+    -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
+    -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
+    box-shadow: 0 -50px 20px -20px #232323 inset;
+}
+
+.video-background {
+    position: absolute;
+    /* Or absolute depending on layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+    /* Push behind content */
+}
+
+.video-background .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.video-background .tit path {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.1;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: textAima 4s ease-in-out 1;
+}
+
+@keyframes textAima {
+    0% {
+        fill: transparent;
+        stroke-dashoffset: 50;
+    }
+
+    80% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #fff;
+        stroke-dashoffset: 0;
+    }
+}
+
+.video-background .title h1 {
+    margin: 0;
+    font-size: 3vw;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures it fills the container without stretching */
+}
+
+@media (max-width : 768px) {
+    .feature {
+        height: 100%;
+    }
+}
+
+/* Container Spacing */
+.wrapper {
+    padding: 20px 8%;
+}
+
+.images-area {
+    padding: 60px 0;
+}
+
+/* Responsive Grid */
+.box-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Card */
+.box {
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Media inside card */
+.box img,
+.box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    /* shorthand for top:0; right:0; bottom:0; left:0 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 40px 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    color: #fff;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.overlay button {
+    background: #fff;
+    color: #111827;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.overlay button:hover {
+    background: #111827;
+    color: #fff;
+}
+
+/* Hover states */
+.box:hover img,
+.box:hover video {
+    transform: scale(1.15);
+}
+
+.box:hover .overlay {
+    opacity: 1;
+}
+
+.popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .80);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.64s ease-in-out, visibility 0.64s ease-in-out;
+}
+
+.popup-inner {
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 600px;
+    width: 60%;
+    height: 70%;
+    background-color: #fff;
+    transform: rotate(32deg);
+    transition: 0.64s ease-in-out;
+}
+
+.popup__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* keeps content from spilling out */
+    box-sizing: border-box;
+    padding: 1rem;
+    /* optional, adds a little spacing */
+}
+
+.popup__media img,
+.popup__media video {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* ensures full image/video fits inside */
+    border-radius: 8px;
+    /* optional, matches your card style */
+}
+
+.popup__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* instead of center so it doesn't push outside */
+    width: 60%;
+    height: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    /* ensures padding is included in width */
+    overflow-y: auto;
+    /* allows scrolling if content is too long */
+    word-wrap: break-word;
+    /* break long words if needed */
+    overflow-wrap: anywhere;
+    /* extra safety for very long words/URLs */
+}
+
+.popup__text p {
+    margin: 0 0 1rem 0;
+    /* prevent collapsing outside */
+    max-width: 100%;
+    /* ensures text fits inside container */
+    letter-spacing: 2px;
+}
+
+.popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup.active .popup-inner {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+}
+
+.popup__close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: .875rem;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #0A0A0A;
+    z-index: 4;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .popup-inner {
+        width: 80%;
+        height: 60%;
+    }
+
+    .popup__text {
+        padding: 1.5rem 2rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .popup-inner {
+        flex-direction: column;
+        width: 90%;
+        height: 80%;
+        transform: rotate(0);
+        /* No rotation on small screens */
+    }
+
+    .popup__media,
+    .popup__text {
+        width: 100%;
+        height: auto;
+    }
+
+    .popup__media {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup__media img,
+    .popup__media video {
+        max-height: 50vh;
+        /* media takes up at most half of screen */
+    }
+
+    .popup__text {
+        padding: 1rem 1.5rem;
+    }
+
+    .popup__text h1 {
+        font-size: 1.5rem;
+    }
+
+    .popup__text p {
+        font-size: 0.8rem;
     }
 }
